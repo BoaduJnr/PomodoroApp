@@ -1,0 +1,98 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
+  padding-top: 51px;
+  
+}
+
+.dial {
+  height: 400px;
+  width: 400px;
+}
+
+.big-container {
+  align-content:center;
+  display: flex;
+  justify-content: space-between;
+  float: none;
+  background-color:  #F2F2F2;
+  width: 450px;
+  height: 600px;
+}
+
+.control-button{
+  height: 63px;
+  width: 327px;
+  left: 24px;
+  top: 101px;
+  display: flex;
+  background-color: #161932;
+  border-radius: 12%;
+  border-radius: 31.5px;
+  align-content: space-between;
+  justify-content: flex-start;
+  
+}
+
+.big-container {
+  align-self:center;
+  left: 50rem;
+  justify-content: center;
+  
+}
+
+.timer {
+  position: relative;
+  display: inline-block;
+}
+
+* {
+  font: inherit;
+}
+
+body {
+  font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans',
+    'Droid Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.timer input {
+  display: block;
+  border: none;
+  width: 240px;
+  font-size: 90px;
+  text-align: center;
+}
+
+.timer button {
+  border: none;
+  font-size: 36px;
+  cursor: pointer;
+}
+
+.timer button:focus {
+  outline: none;
+}
+
+.timer input:focus {
+  outline: none;
+}
+
+.controls {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
