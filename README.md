@@ -2,7 +2,7 @@
 # Frontend Mentor | Pomodoro app
 
 
-[Pomodoro app](url) is a web application for time and tasks management. 
+[Pomodoro app](https://boadujnr.github.io/PomodoroApp/) is a web application for time and tasks management. 
 
 ## Pomodoro
 ```bash
@@ -27,10 +27,10 @@ Configuration
 ## Tools & Technologies
 
 There following are some the toolz and technologies used.
-* [HTML](https://www.typescriptlang.org/) was the language used.
-* [CSS](https://www.postgresql.org/) was the DBMS used.
-* [Javascript](https://www.postgresql.org/) was the ORM used to engage and manipulate the database.
-* [GitHub](https://github.com/) was used for version control.
+* [HTML](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics) 
+* [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS) 
+* [Javascript](https://www.javascript.com/)
+* [GitHub](https://github.com/)
 
 
 ## File Structure
