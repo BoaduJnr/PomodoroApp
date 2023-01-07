@@ -2,15 +2,17 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: Kumbh Sans;
 }
 
 body {
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between; 
+  justify-content: space-between;
   padding-top: 51px;
-  
+  background: linear-gradient(315deg, #2E325A 0%, #0E112A 100%);
+
 }
 
 .dial {
@@ -19,51 +21,68 @@ body {
 }
 
 .big-container {
-  align-content:center;
+  align-content: center;
   display: flex;
   float: none;
-  background-color:  #F2F2F2;
-  width: 600px;
-  height: 760px;
-  align-self:center;
+  background-color: #F2F2F2;
+  width: 650px;
+  height: 960px;
+  align-self: center;
   left: 50rem;
   justify-content: center;
   background: linear-gradient(315deg, #2E325A 0%, #0E112A 100%);
+  border: none;
 
 
 }
-.logo-container{
-  align-content:center;
-  display:flexbox;
+.logo-container {
+  position: relative;
+  align-content: center;
+  display: flex;
+  float: none;
+  height: 40px;
+  width: 157px;
+  
+  
+
+}
+
+#duration {
+  color: #0E112A 100%;
+}
+
+.small-container {
+  align-content: center;
+  display: flexbox;
   justify-content: space-evenly;
   color: linear-gradient(315deg, #2E325A 0%, #0E112A 100%);
+  border: none;
 
 }
 
-.control-buttons{
-  height: 63px;
-  width: 400px;
+.control-buttons {
+  height: 80px;
+  width: 450px;
   top: 101px;
-  display: flexbox;
-  background-color: #161932;
+  background-color: #0E112A;
   border-radius: 50%;
   border-radius: 31.5px;
   justify-content: space-around;
-  align-items: flex-end;
+  align-items: center;
   margin: 40px;
-  
+
 }
 
 
-.timer {
+.timer{
   position: relative;
   display: inline-block;
   margin: 40px;
-  border: 4mm solid #0E112A ;
+  border: 7mm solid #2E325A;
   border-radius: 50% / 50%;
-  color: linear-gradient(315deg, #2E325A 0%, #0E112A 100%);
+  background: linear-gradient(315deg, #0E112A 100%, #2E325A 0%);
 
-  
+
 }
 
 * {
@@ -82,18 +101,42 @@ body {
   font-size: 90px;
   text-align: center;
 }
+
 button {
   border: none;
   font-size: 20px;
   cursor: pointer;
- width: 10rem;
+  width: 8rem;
+  height: 4rem;
+  font-family: Kumbh Sans;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 17px;
+  letter-spacing: 0px;
+  text-align: center;
+  margin-top: 8px;
+
+
 }
 
-/* .timer button {
+#pomodoro {
+  border-radius: 20px;
+  border-radius: 30% / 50%;
+  background: #F87070
+}
+
+.break {
+  background: #0E112A;
+  color : rgba(215, 224, 255, 1);
+
+
+}
+
+.timer button {
   border: none;
   font-size: 36px;
   cursor: pointer;
-} */
+}
 
 .timer button:focus {
   outline: none;
@@ -113,6 +156,6 @@ button {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  
+
 
 }
