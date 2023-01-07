@@ -21,37 +21,49 @@ body {
 .big-container {
   align-content:center;
   display: flex;
-  justify-content: space-between;
   float: none;
   background-color:  #F2F2F2;
-  width: 450px;
-  height: 600px;
-}
-
-.control-button{
-  height: 63px;
-  width: 327px;
-  left: 24px;
-  top: 101px;
-  display: flex;
-  background-color: #161932;
-  border-radius: 12%;
-  border-radius: 31.5px;
-  align-content: space-between;
-  justify-content: flex-start;
-  
-}
-
-.big-container {
+  width: 600px;
+  height: 760px;
   align-self:center;
   left: 50rem;
   justify-content: center;
+  background: linear-gradient(315deg, #2E325A 0%, #0E112A 100%);
+
+
+}
+.logo-container{
+  align-content:center;
+  display:flexbox;
+  justify-content: space-evenly;
+  color: linear-gradient(315deg, #2E325A 0%, #0E112A 100%);
+
+}
+
+.control-buttons{
+  height: 63px;
+  width: 400px;
+  top: 101px;
+  display: flexbox;
+  background-color: #161932;
+  border-radius: 50%;
+  border-radius: 31.5px;
+  justify-content: space-around;
+  align-items: flex-end;
+  margin: 40px;
   
 }
+
 
 .timer {
   position: relative;
   display: inline-block;
+  margin: 40px;
+  border: 4mm solid #0E112A ;
+  border-radius: 50% / 50%;
+  color: linear-gradient(315deg, #2E325A 0%, #0E112A 100%);
+
+  
 }
 
 * {
@@ -70,12 +82,18 @@ body {
   font-size: 90px;
   text-align: center;
 }
+button {
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+ width: 10rem;
+}
 
-.timer button {
+/* .timer button {
   border: none;
   font-size: 36px;
   cursor: pointer;
-}
+} */
 
 .timer button:focus {
   outline: none;
@@ -95,4 +113,6 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  
+
 }
