@@ -6,15 +6,9 @@ const shortButton = document.querySelector("#short");
 const pomodoroButton = document.querySelector("#pomodoro");
 const circle = document.querySelector("circle");
 
-
-pomodoroButton.addEventListener('click', resetTimerValue(25))
-longButton.addEventListener('click', resetTimerValue(15))
-shortButton.addEventListener('click', resetTimerValue(5))
-
-
-
-
-
+pomodoroButton.addEventListener("click", resetTimerValue(25));
+longButton.addEventListener("click", resetTimerValue(15));
+shortButton.addEventListener("click", resetTimerValue(5));
 
 const perimeter = circle.getAttribute("r") * 2 * Math.PI;
 
@@ -36,6 +30,3 @@ const timer = new Timer(durationInput, startButton, pauseButton, {
     // alert("Time completed!!");
   },
 });
-
-
-
