@@ -9,20 +9,20 @@ function resetTimerValue(number) {
   };
 }
 
-function startPauseSwitch(event) {
-  const start = document.getElementById("start");
-  const pause = document.getElementById("pause");
-  if (start.style.display != "none") {
-    start.style.display == "none";
-    pause.style.display == "block";
-  } else {
-    pause.style.display == "none";
-    start.style.display = "block";
-  }
-}
+// function startPauseSwitch(event) {
+//   const start = document.getElementById("start");
+//   const pause = document.getElementById("pause");
+//   if (start.style.display != "none") {
+//     start.style.display == "none";
+//     pause.style.display == "block";
+//   } else {
+//     pause.style.display == "none";
+//     start.style.display = "block";
+//   }
+// }
 
-function changeColor(event) {
-    const el = event.target;
-    el.setAttribute('style', 'display: none');
+// function changeColor(event) {
+//     const el = event.target;
+//     el.setAttribute('style', 'display: none');
     
-  }
+//   }
