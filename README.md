@@ -18,7 +18,7 @@
 15 min
 ```
 
-## Settins
+## Settings
 ```bash
 Configuration
 ```
@@ -46,6 +46,6 @@ There following are some the toolz and technologies used.
 
 ## Developer
 * [Boadu George Junior]
-(https://github.com/BoaduJnr/BoaduJnr)
-(https://www.linkedin.com/in/george-junior-boadu-794673232/)
-(pielly16@gmail.com)
+* (https://github.com/BoaduJnr/BoaduJnr)
+* (https://www.linkedin.com/in/george-junior-boadu-794673232/)
+* (pielly16@gmail.com)

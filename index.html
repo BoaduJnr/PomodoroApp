@@ -11,9 +11,9 @@
       <div class="small-container">
         <div class="logo-container">
           <img src="assets/logo.svg" alt="pomodoro logo">
-        </div>       
+        </div>
         <div class="control-buttons">
-          <button id="pomodoro" >Pomodoro</button>
+          <button id="pomodoro">Pomodoro</button>
           <button id="short" class="break">short break</button>
           <button id="long" class="break">long break</button>
         </div>
@@ -26,16 +26,32 @@
             </div>
           </div>
           <svg class="dial">
-            <circle fill="transparent" stroke="#F87070" stroke-width="15" r="190"
+            <circle fill="transparent" stroke="#F87070" stroke-width="15"
+              r="190"
               cx="0" cy="200"
               transform="rotate(-90 100 100)" />
             </svg>
 
           </div>
           <div class="settings">
-            <img src="assets/icon-settings.svg" alt="settings">
+            <img href="#divOne" class="settings-button" src="assets/icon-settings.svg" alt="settings">
           </div>
-
+          <div class="overlay" id="divOne">
+            <div class="wrapper">
+              <h2>Settings</h2>
+              <a href="#" class="close"> &times;</a>
+              <div class="content">
+                <div class="container">
+                  <form action="">
+                    <label for="">Example</label>
+                    <input type="text">
+                    <input type="radio">
+                    <input type="submit" value="submit">
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
 
 
