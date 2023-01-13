@@ -174,18 +174,18 @@ button {
   top: 0;
   bottom: 0;
   left: 0;
-  right: 0;
-  background: rgba(0,0,0,0.8);
+  right: 0; 
+  background: rgba(0,0,0,0.8); 
   transition: opacity 500ms;
-  visibility: hidden;
-  opacity: 0;
+   visibility: hidden; 
+   opacity: 0; 
 }
 
 .overlay:target{
 visibility: visible;
 opacity: 1;
 }
-.wrapper {
+ .wrapper {
   margin : 70px auto;
   padding: 20px;
   background: #e7e7e7;
@@ -208,4 +208,4 @@ opacity: 1;
 .wrapper .content{
    max-height: 30%;
    overflow: auto ;
-}
+} 
