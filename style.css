@@ -6,12 +6,12 @@
 }
 
 body {
-  /* height: 100vh; */
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   padding-top: 51px;
-  background: linear-gradient(315deg, #2E325A 0%, #0E112A 100%);
+  background: rgb(19, 21, 46);
   font-family: Kumbh Sans;
 
 }
@@ -34,6 +34,35 @@ body {
 
 
 } */
+@media screen and (max-width: 480px) {
+  .small-container {
+    width: 100%; /* The width is 100%, when the viewport is 480px or smaller */
+  }
+  .logo-container{
+    text-align: center;
+    justify-content: space-around;
+  }
+  /* .control-buttons div{
+    width: 28rem;
+  } */
+}
+@media screen and (max-width: 800px) {
+  .small-container {
+    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+  .control-buttons{
+    width: 28rem;
+  }
+}
+@media screen and (max-width: 1440px) {
+  .small-container {
+    width: 100%; /* The width is 100%, when the viewport is 1440px or smaller */
+  }
+  .control-buttons div{
+    width: 28rem;
+    text-align: center;
+  }
+}
 
 .logo-container {
   margin: 1rem;
@@ -44,6 +73,7 @@ body {
 #duration{
   background: linear-gradient(315deg, #0E112A 100%, #2E325A 0%);
   color: rgba(215, 224, 255, 1);
+  font-weight: 600;
 
 }
 .controls button{
@@ -60,25 +90,40 @@ body {
 .small-container {
   text-align: center;
   display: flexbox;
-  justify-content: space-evenly;
+  justify-content: center;
   color: linear-gradient(315deg, #2E325A 0%, #0E112A 100%);
   border: none;
 
 }
 
 .control-buttons {
+  display: flex;
   height: 80px;
-  /* width: 28rem; */
+  /* width: 20%; */
   padding-left: 0%;
   top: 101px;
   background-color: #0E112A;
-  border-radius: 50%;
   border-radius: 31.5px;
-  justify-content: space-around;
-  align-items: center;
-  /* text-align: center; */
+  justify-content: center;
+  text-align: center;
   margin: 40px;
 
+}
+#pomodoro {
+  border-radius: 20px;
+  border-radius: 30% / 50%;
+  background: #F87070
+}
+
+.break {
+  background: #0E112A;
+  color: rgba(215, 224, 255, 0.5);
+  border-radius: 20px;
+  border-radius: 30% / 50%;
+
+}
+.control-buttons .break:hover {
+  color: rgba(215, 224, 255, 1);
 }
 
 
@@ -86,9 +131,11 @@ body {
   position: relative;
   display: inline-block;
   margin: 40px;
-  border: 7mm solid  #0E112A;
+  border: 7mm solid  #161932;
   border-radius: 50% / 50%;
   background: linear-gradient(315deg, #0E112A 100%, #2E325A 0%);
+  padding: 10px;
+  box-shadow: -30px -30px 50px 8px #26294e;
 
 
 }
@@ -108,26 +155,12 @@ button {
   cursor: pointer;
   width: 8rem;
   height: 4rem;
-  font-family: Kumbh Sans;
-  font-size: 14px;
+  font-size: 1rem;
   font-weight: 700;
   line-height: 17px;
   letter-spacing: 0px;
   text-align: center;
   margin-top: 8px;
-
-
-}
-
-#pomodoro {
-  border-radius: 20px;
-  border-radius: 30% / 50%;
-  background: #F87070
-}
-
-.break {
-  background: #0E112A;
-  color: rgba(215, 224, 255, 1);
 
 
 }
