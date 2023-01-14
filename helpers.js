@@ -2,11 +2,9 @@
 //take one arg : number
 // /return new  value for duration
 
-function resetTimerValue(number) {
+function resetTimerValue(element) {
   return () => {
     timer.pause();
-    durationInput.value = number;
+    durationInput.value = parseInt(element.value);
   };
 }
-
-

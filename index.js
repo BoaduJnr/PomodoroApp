@@ -6,9 +6,9 @@ const shortButton = document.querySelector("#short");
 const pomodoroButton = document.querySelector("#pomodoro");
 const circle = document.querySelector("circle");
 
-pomodoroButton.addEventListener("click", resetTimerValue(25));
-longButton.addEventListener("click", resetTimerValue(15));
-shortButton.addEventListener("click", resetTimerValue(5));
+pomodoroButton.addEventListener("click", resetTimerValue(document.querySelector('#set-pomodoro')));
+longButton.addEventListener("click", resetTimerValue(document.querySelector('#set-long-break')));
+shortButton.addEventListener("click", resetTimerValue(document.querySelector('#set-short-break')));
 
 const perimeter = circle.getAttribute("r") * 2 * Math.PI;
 
