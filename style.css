@@ -3,22 +3,25 @@
   margin: 0;
   box-sizing: border-box;
   font: inherit; 
+  
 }
 
 body {
   height: 100%;
+  /* width: fit-content; */
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   padding-top: 51px;
   background: rgb(19, 21, 46);
-  font-family: Kumbh Sans;
+  font-family: 'Kumbh Sans', sans-serif;
+  align-items: stretch;
+  align-self: center;
+  align-content: center;
+  
 
 }
-body {
-  font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans',
-    'Droid Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-}
+
 /* .big-container {
   align-content: center;
   display: flex;
@@ -35,28 +38,36 @@ body {
 
 } */
 @media screen and (max-width: 480px) {
+  body{
+    flex-direction: row;
+  }
   .small-container {
-    width: 100%; /* The width is 100%, when the viewport is 480px or smaller */
+    width: 80%; /* The width is 100%, when the viewport is 480px or smaller */
   }
-  .logo-container{
-    text-align: center;
-    justify-content: space-around;
+ 
+  .control-buttons div{
+    width: 28rem;
   }
-  /* .control-buttons div{
+}
+@media screen and (max-width: 800px) {
+  body {
+    flex-direction: row;
+
+  }
+
+  .small-container {
+    width: 80%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+  /* .control-buttons{
     width: 28rem;
   } */
 }
-@media screen and (max-width: 800px) {
-  .small-container {
-    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
-  }
-  .control-buttons{
-    width: 28rem;
-  }
-}
 @media screen and (max-width: 1440px) {
+  body{
+    flex-direction: column;
+  }
   .small-container {
-    width: 100%; /* The width is 100%, when the viewport is 1440px or smaller */
+    width: 80%; /* The width is 100%, when the viewport is 1440px or smaller */
   }
   .control-buttons div{
     width: 28rem;
@@ -66,19 +77,20 @@ body {
 
 .logo-container {
   margin: 1rem;
+  justify-content: center;
   text-align: center;
   height: 40px;
 }
 
 #duration{
-  background: linear-gradient(315deg, #0E112A 100%, #2E325A 0%);
+  background: #0E112A;
   color: rgba(215, 224, 255, 1);
   font-weight: 600;
 
 }
 .controls button{
   display: block;
-  background: linear-gradient(315deg, #0E112A 100%, #2E325A 0%);
+  background: #0E112A;
   color: rgba(215, 224, 255, 1);
 }
 
@@ -90,29 +102,40 @@ body {
 .small-container {
   text-align: center;
   display: flexbox;
-  justify-content: center;
-  color: linear-gradient(315deg, #2E325A 0%, #0E112A 100%);
+  /* justify-content: center; */
+  color:#161932;
   border: none;
 
 }
 
 .control-buttons {
   display: flex;
-  height: 80px;
-  /* width: 20%; */
+  flex-direction: column;
+  /* height: 4em; */
   padding-left: 0%;
   top: 101px;
-  background-color: #0E112A;
+  background: rgb(19, 21, 46);
   border-radius: 31.5px;
   justify-content: center;
-  text-align: center;
+  align-self: center;
   margin: 40px;
+  
+  
 
+}
+.control-buttons div{
+  text-align: center;
+  background-color: #0E112A;
+  border-radius: 31.5px;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+  align-self: stretch;
 }
 #pomodoro {
   border-radius: 20px;
   border-radius: 30% / 50%;
-  background: #F87070
+  background: #F87070;
 }
 
 .break {
@@ -120,6 +143,8 @@ body {
   color: rgba(215, 224, 255, 0.5);
   border-radius: 20px;
   border-radius: 30% / 50%;
+  padding: 0;
+  margin:  0;
 
 }
 .control-buttons .break:hover {
@@ -130,12 +155,12 @@ body {
 .timer {
   position: relative;
   display: inline-block;
-  margin: 40px;
+  margin: 2em;
   border: 7mm solid  #161932;
   border-radius: 50% / 50%;
-  background: linear-gradient(315deg, #0E112A 100%, #2E325A 0%);
+  background:#0E112A;
   padding: 10px;
-  box-shadow: -30px -30px 50px 8px #26294e;
+  box-shadow: -40px -20px 50px 2px #222444;
 
 
 }
@@ -144,8 +169,8 @@ body {
 .timer input {
   display: block;
   border: none;
-  width: 240px;
-  font-size: 90px;
+  width: 3em;
+  font-size: 80px;
   text-align: center;
 }
 
@@ -153,14 +178,14 @@ button {
   border: none;
   font-size: 20px;
   cursor: pointer;
-  width: 8rem;
+  width: 9rem;
   height: 4rem;
   font-size: 1rem;
   font-weight: 700;
   line-height: 17px;
   letter-spacing: 0px;
   text-align: center;
-  margin-top: 8px;
+  margin: 5px 0;
 
 
 }
@@ -223,15 +248,19 @@ opacity: 1;
  .wrapper {
   margin : 70px auto;
   padding: 20px;
-  background: rgba(255, 255, 255, 1);
-  border-radius: 20px;
+  background: #FFFFFF;
   width: 30%;
   position: relative;
   transition: all 5s ease-in-out;
+  width: 540px;
+  
+  border-radius: 25px;
+
 }
+
 .wrapper .close{
   position: absolute;
-  top: 20px;
+  top: 5px;
   right: 30px;
   transition: all 200ms;
   font-size: 30px;
@@ -239,8 +268,35 @@ opacity: 1;
   text-decoration: none;
   color: #333;
 }
+.wrapper h2{
+height: 35px;
+width: 110px;
+left: 40px;
+top: 34px;
+font-size: 28px;
+font-weight: 700;
+line-height: 35px;
+letter-spacing: 0px;
+text-align: left;
 
+}
+
+.wrapper p{
+height: 16px;
+width: 52px;
+left: 0px;
+top: 21px;
+border-radius: nullpx;
+font-family: Kumbh Sans;
+font-size: 13px;
+font-weight: 600;
+line-height: 16px;
+letter-spacing: 5px;
+text-align: left;
+
+
+}
 .wrapper .content{
-   max-height: 30%;
+   max-height: 80%;
    overflow: auto ;
 } 
