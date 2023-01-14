@@ -3,12 +3,16 @@
 
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;900&family=Roboto+Slab&family=Space+Mono:ital@1&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;900&family=Roboto+Slab&family=Space+Mono:ital@1&display=swap"
+      rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="settings.css" />
     <title>Frontend Mentor | Pomodoro app</title>
   </head>
 
@@ -55,7 +59,7 @@
                   <form>
                     <div>
                       <p>TIME (MINUTES)</p><br>
-                      <div>
+                      <div class="set-timer">
                         <div>
                           <label for="set-pomodoro">pomodoro</label>
                           <input id="set-pomodoro" type="number" min="0"
@@ -77,17 +81,24 @@
                     <div class="font">
                       <p>Font</p>
 
-                      <input type="radio" name="font" id="Kumbh+Sans" style="font-family: Kumbh Sans;"><label
-                        for="Kumbh+Sans">Aa</label>
-                      <input type="radio" name="font" id="Roboto+Slab"><label for="Roboto+Slab" style="font-family: Roboto Slab;">Aa</label>
-                      <input type="radio" name="font" id="Space+Mono"><label for="Space+Mono">Aa</label>
+                      <input type="radio" name="font" id="Kumbh+Sans"><label
+                        for="Kumbh+Sans" style="font-family: Kumbh Sans;">Aa</label>
+                      <input type="radio" name="font" id="Roboto+Slab"><label
+                        for="Roboto+Slab" style="font-family: Roboto Slab;">Aa</label>
+                      <input type="radio" name="font" id="Space+Mono"><label
+                        for="Space+Mono" style="font-family: Roboto Slab;">Aa</label>
                     </div>
                     <hr>
                     <div class="color">
                       <p>Color</p>
-                      <input type="color" name="" id="color">
-                      <input type="radio" name="" id="color">
-                      <input type="radio" name="" id="color">
+                      <select id="colorlist"
+                        onchange="changecolor(container,value)">
+                        <option value="white"> </option>
+                        <option value="red">RED</option>
+                        <option value="blue">BLUE</option>
+                        <option value="green">GREEN</option>
+                        <option value="yellow">YELLOW</option>
+                      </select>
                     </div>
 
 
