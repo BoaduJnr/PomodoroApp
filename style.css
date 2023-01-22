@@ -73,6 +73,16 @@ body {
     width: 28rem;
     text-align: center;
   }
+  .set-timer{
+    display: flex;
+    flex-direction: row;
+    /* height: 109px; */
+    /* width: 462px; */
+    /* left: 40px;
+    top: 118px; */
+    
+  
+  }
 }
 
 .logo-container {

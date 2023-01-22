@@ -6,7 +6,7 @@
     font-size: 1em;
     text-decoration: none;
     cursor: pointer;
-    transition: all 0.3s ease-out;
+    transition: all 0.2s ease-out;
     border-radius: 50px;
   }
   .overlay{
@@ -27,7 +27,7 @@
   }
    .wrapper {
     margin : 70px auto;
-    padding: 20px;
+    padding: 2em;
     background: #FFFFFF;
     width: 30%;
     position: relative;
@@ -58,6 +58,7 @@
   line-height: 35px;
   letter-spacing: 0px;
   text-align: left;
+  margin-bottom: 1em;
   
   }
   
@@ -82,10 +83,10 @@
   } 
   
   .set-timer input[type="number"] {
-    height: 46.628570556640625px;
+    height: 46px;
     width: 8em;
     left: 0px;
-    top: 21.371337890625px;
+    top: 21px;
     border-radius: 6px;
     border: none;
     background-color: #EFF1FA;
@@ -96,12 +97,13 @@
     letter-spacing: 0px;
     text-align: left;
     padding: 1em;
+    margin-bottom: 1em;
   
   }
   .set-timer label{
-    height: 15px;
+    /* height: 15px;
     width: 59px;
-    left: 0px;
+    left: 0px; */
     top: 1px;
     font-family: Kumbh Sans;
     font-size: 12px;
@@ -119,11 +121,13 @@
   .set-timer{
     display: flex;
     flex-direction: row;
-    height: 109px;
-    width: 462px;
-    left: 40px;
+    flex-wrap: nowrap;
+    /* height: 109px;
+    width: 462px; */
+    /* left: 40px;
     top: 118px;
-    border-radius: 0px;
+    border-radius: 0px; */
+    
   
   }
   
