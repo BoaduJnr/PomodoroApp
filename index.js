@@ -16,9 +16,7 @@ circle.setAttribute("stroke-dasharray", perimeter);
 
 let duration;
 
-// const start = new Button(startButton);
-// const pause = new Button(pauseButton);
-// console.log(start, pause)
+
 
 const timer = new Timer(durationInput, startButton, pauseButton, {
   onStart(totalDuration) {
