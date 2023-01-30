@@ -40,6 +40,7 @@ body {
 @media screen and (max-width: 480px) {
   body{
     flex-direction: row;
+    
   }
   .small-container {
     width: 80%; /* The width is 100%, when the viewport is 480px or smaller */

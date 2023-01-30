@@ -16,9 +16,15 @@ circle.setAttribute("stroke-dasharray", perimeter);
 
 let duration;
 
+// const start = new Button(startButton);
+// const pause = new Button(pauseButton);
+// console.log(start, pause)
+
 const timer = new Timer(durationInput, startButton, pauseButton, {
   onStart(totalDuration) {
-    duration = totalDuration;
+    startButton.style.display = "none";
+    duration = totalDuration;   
+    
   },
   onTick(timeRemaining) {
     circle.setAttribute(
@@ -27,6 +33,10 @@ const timer = new Timer(durationInput, startButton, pauseButton, {
     );
   },
   onComplete() {
-    // alert("Time completed!!");
+    startButton.innerText = "Restart";
+    durationInput.value = "25:00";
   },
 });
+
+
+
