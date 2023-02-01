@@ -24,7 +24,7 @@ class Timer {
       this.pauseButton.style.display = "block";
       this.onStart(this.timeRemaining);
     }
-    this.interval = setInterval(this.tick, 20);
+    this.interval = setInterval(this.tick, 1000);
   };
 
   pause = () => {
@@ -41,7 +41,7 @@ class Timer {
         this.onComplete();
       }
     } else {
-      this.timeRemaining = this.timeRemaining - 0.02;
+      this.timeRemaining = this.timeRemaining - 0.01;
       if (this.onTick) {
         this.onTick(this.timeRemaining);
       }
