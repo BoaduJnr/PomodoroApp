@@ -22,68 +22,34 @@ body {
 
 }
 
-/* .big-container {
+.big-container {
   align-content: center;
-  display: flex;
+  grid-row: inherit;
   float: none;
   background-color: #F2F2F2;
-  width: 375px;
-  height: 667px;
   align-self: center;
   left: 50rem;
   justify-content: center;
   background: linear-gradient(315deg, #2E325A 0%, #0E112A 100%);
   border: none;
-
-
-} */
+}
 @media screen and (max-width: 480px) {
-  body{
-    flex-direction: row;
-    
-  }
-  .small-container {
-    width: 80%; /* The width is 100%, when the viewport is 480px or smaller */
+  .big-container {
+    height: auto;
   }
  
-  .control-buttons div{
-    width: 28rem;
-  }
 }
 @media screen and (max-width: 800px) {
-  body {
-    flex-direction: row;
-
+  .big-container{
+    height: auto;
   }
-
-  .small-container {
-    width: 80%; /* The width is 100%, when the viewport is 800px or smaller */
-  }
-  /* .control-buttons{
-    width: 28rem;
-  } */
+  
 }
 @media screen and (max-width: 1440px) {
-  body{
-    flex-direction: column;
-  }
-  .small-container {
-    width: 80%; /* The width is 100%, when the viewport is 1440px or smaller */
-  }
-  .control-buttons div{
-    width: 28rem;
-    text-align: center;
-  }
-  .set-timer{
-    display: flex;
-    flex-direction: row;
-    /* height: 109px; */
-    /* width: 462px; */
-    /* left: 40px;
-    top: 118px; */
-    
-  
-  }
+  .big-container{
+   height: auto; 
+  } 
+ 
 }
 
 .logo-container {
