@@ -28,9 +28,8 @@ body {
   float: none;
   background-color: #F2F2F2;
   align-self: center;
-  left: 50rem;
   justify-content: center;
-  background: linear-gradient(315deg, #2E325A 0%, #0E112A 100%);
+  background:rgb(19, 21, 46);
   border: none;
 }
 @media screen and (max-width: 480px) {
@@ -137,8 +136,8 @@ body {
   border-radius: 50% / 50%;
   background:#0E112A;
   padding: 10px;
-  box-shadow: -40px -20px 50px 2px #222444;
-
+  box-shadow: -32px -39px 30px 1px #222444;
+  
 
 }
 
