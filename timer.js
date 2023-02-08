@@ -41,11 +41,7 @@ class Timer {
       }
     } else {
       
-      let text = this.timeRemaining.toString();
-      let seconds = text.split(".")[1];
-      if (seconds > 59) {
-        this.timeRemaining = parseFloat(`${text.split(".")[0]}.60`)
-      }  
+       
       this.timeRemaining = this.timeRemaining - 0.01;
 
 
@@ -56,12 +52,16 @@ class Timer {
   };
 
   get timeRemaining() {
+      let text = this.durationInput.value;
+      let seconds = text.split(".")[1];
+      if (seconds > 60) {
+        this.durationInput.value = parseFloat(`${text.split(".")[0]}.59`)
+      } 
     return parseFloat(this.durationInput.value);
   }
 
   set timeRemaining(time) {
-
-
-    this.durationInput.value = time.toFixed(2);
+     console.log(time)
+    durationInput.value = time.toFixed(2);
   }
 }

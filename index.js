@@ -32,7 +32,7 @@ const timer = new Timer(durationInput, startButton, pauseButton, {
   },
   onComplete() {
     startButton.innerText = "Restart";
-    durationInput.value = "25:00";
+    durationInput.value = "00:00";
   },
 });
 
