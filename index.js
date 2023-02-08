@@ -27,7 +27,7 @@ const timer = new Timer(durationInput, startButton, pauseButton, {
   onTick(timeRemaining) {
     circle.setAttribute(
       "stroke-dashoffset",
-      (perimeter * timeRemaining) / duration - perimeter
+      (perimeter * (timeRemaining + 0.40 )) / duration - perimeter
     );
   },
   onComplete() {
