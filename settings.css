@@ -149,6 +149,17 @@ text-align: left;
   color: #EFF1FA;
 }
 
+.settings button{
+  grid-column: inherit;
+  grid-auto-flow: dense;
+  text-align: center;
+  background-color: #0E112A;
+  border-radius: 31.5px;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+}
+
 /* simulate radiobutton appearance using pseudoselector */
 /* input[type="radio"] + label:before {
   content: ""; */

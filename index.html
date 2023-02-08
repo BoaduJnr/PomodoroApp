@@ -52,10 +52,11 @@
             <div class="wrapper">
               <h2>Settings</h2>
               <hr>
-              <a href="#" class="close"> &times;</a>
+              
+                <a href="#" class="close"> &times;</a>
               <div class="content">
                 <div class="container">
-                  <form>
+                  <form id="settings">
                     <div>
                       <p>TIME (MINUTES)</p><br>
                       <div class="set-timer">
@@ -77,34 +78,35 @@
                       </div>
                     </div>
                     <hr>
-                    <div class="font">
-                      <p>Font</p>
+                    <div class="font" id="font">
+                        <p>Font</p>
 
-                      <input type="radio" name="font" id="Kumbh+Sans"><label
-                        for="Kumbh+Sans" style="font-family: Kumbh Sans;">Aa</label>
-                      <input type="radio" name="font" id="Roboto+Slab"><label
+                      <input type="radio" name="font" value="Kumbh Sans" id="Kumbh+Sans" ><label
+                        for="Kumbh+Sans" style="font-family: Kumbh Sans;" checked>Aa</label>
+                      <input type="radio" name="font" value="Roboto Slab" id="Roboto+Slab"><label
                         for="Roboto+Slab" style="font-family: Roboto Slab;">Aa</label>
-                      <input type="radio" name="font" id="Space+Mono"><label
+                      <input type="radio" name="font" value="Space Mono" id="Space+Mono" ><label
                         for="Space+Mono" style="font-family: Roboto Slab;">Aa</label>
+                      
                     </div>
                     <hr>
                     <div class="color">
                       <p>Color</p>
-                      <select id="colorlist"
-                        onchange="changecolor(container,value)">
-                        <option value="white"> </option>
-                        <option value="red">RED</option>
-                        <option value="blue">BLUE</option>
-                        <option value="green">GREEN</option>
-                        <option value="yellow">YELLOW</option>
+                      <select id="colorlist">
+                        <option value=" #F87070">#F87070
+                      </option>
+                        <option value="#70F3F8">#70F3F8
+                        </option>
+                        <option value="#D881F8">#D881F8;
+                        </option>
                       </select>
                     </div>
-
-
-                    <input type="submit" value="Apply">
+                    <button type="submit">Apply</button> 
                   </form>
                 </div>
               </div>
+             
+              
             </div>
           </div>
         </div>
@@ -114,6 +116,8 @@
         <script src="timer.js"></script>
         <script src="helpers.js"></script>
         <script src="index.js"></script>
+        <script src="settings.js"></script>
+        
       </body>
 
     </html>

@@ -2,8 +2,8 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font: inherit; 
-  
+  font: inherit;
+
 }
 
 body {
@@ -19,7 +19,7 @@ body {
   align-items: stretch;
   align-self: center;
   align-content: center;
-  
+
 
 }
 
@@ -30,28 +30,31 @@ body {
   background-color: #F2F2F2;
   align-self: center;
   justify-content: center;
-  background:rgb(19, 21, 46);
+  background: rgb(19, 21, 46);
   border: none;
 }
+
 @media screen and (max-width: 480px) {
   .big-container {
     height: auto;
     width: min-content;
   }
- 
+
 }
+
 @media screen and (max-width: 800px) {
-  .big-container{
+  .big-container {
     height: auto;
   }
-  
+
 }
+
 @media screen and (max-width: 1440px) {
-  .big-container{
-   height: auto; 
-   
-  } 
- 
+  .big-container {
+    height: auto;
+
+  }
+
 }
 
 .logo-container {
@@ -61,13 +64,14 @@ body {
   height: 40px;
 }
 
-#duration{
+#duration {
   background: #0E112A;
   color: rgba(215, 224, 255, 1);
   font-weight: 600;
 
 }
-.controls button{
+
+.controls button {
   /* display: block; */
   background: #0E112A;
   color: rgba(215, 224, 255, 1);
@@ -82,7 +86,7 @@ body {
   text-align: center;
   display: flexbox;
   /* justify-content: center; */
-  color:#161932;
+  color: #161932;
   border: none;
 
 }
@@ -95,11 +99,12 @@ body {
   justify-content: center;
   align-self: center;
   margin: 40px;
-  
-  
+
+
 
 }
-.control-buttons div{
+
+.control-buttons div {
   grid-column: inherit;
   grid-auto-flow: dense;
   text-align: center;
@@ -110,6 +115,7 @@ body {
   justify-content: center;
   /* align-self: stretch; */
 }
+
 #pomodoro {
   border-radius: 20px;
   border-radius: 30% / 50%;
@@ -122,9 +128,10 @@ body {
   border-radius: 20px;
   border-radius: 30% / 50%;
   padding: 0;
-  margin:  0;
+  margin: 0;
 
 }
+
 .control-buttons .break:hover {
   color: rgba(215, 224, 255, 1);
 }
@@ -134,13 +141,13 @@ body {
   position: relative;
   /* display: inline-block; */
   margin: 2em;
-  border: 8mm solid  #161932;
+  border: 8mm solid #161932;
   border-radius: 50% / 50%;
-  background:#0E112A;
+  background: #0E112A;
   padding: 5px;
-  
+
   box-shadow: -32px -39px 30px 1px #222444;
-  
+
 
 }
 
@@ -196,4 +203,3 @@ button {
   flex-direction: column;
 
 }
-
