@@ -32,7 +32,7 @@
     width: 30%;
     position: relative;
     transition: all 5s ease-in-out;
-    width: 540px;
+    /* width: 540px; */
     
     border-radius: 25px;
   
@@ -80,6 +80,8 @@
   .wrapper .content{
      max-height: 80%;
      overflow: auto ;
+     display: flex;
+     flex-wrap: wrap;
   } 
   
   .set-timer input[type="number"] {
@@ -118,8 +120,8 @@
   }
   .set-timer{
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
+    /* flex-direction: row; */
+   flex-wrap: wrap;
     /* height: 109px;
     width: 462px; */
     /* left: 40px;

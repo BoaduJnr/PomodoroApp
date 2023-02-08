@@ -35,6 +35,7 @@ body {
 @media screen and (max-width: 480px) {
   .big-container {
     height: auto;
+    width: min-content;
   }
  
 }
@@ -47,6 +48,7 @@ body {
 @media screen and (max-width: 1440px) {
   .big-container{
    height: auto; 
+   
   } 
  
 }
@@ -65,7 +67,7 @@ body {
 
 }
 .controls button{
-  display: block;
+  /* display: block; */
   background: #0E112A;
   color: rgba(215, 224, 255, 1);
 }
@@ -85,9 +87,6 @@ body {
 }
 
 .control-buttons {
-  display: flex;
-  flex-direction: column;
-  /* height: 4em; */
   padding-left: 0%;
   top: 101px;
   background: rgb(19, 21, 46);
@@ -100,6 +99,8 @@ body {
 
 }
 .control-buttons div{
+  grid-column: inherit;
+  grid-auto-flow: dense;
   text-align: center;
   background-color: #0E112A;
   border-radius: 31.5px;
@@ -130,12 +131,13 @@ body {
 
 .timer {
   position: relative;
-  display: inline-block;
+  /* display: inline-block; */
   margin: 2em;
-  border: 7mm solid  #161932;
+  border: 8mm solid  #161932;
   border-radius: 50% / 50%;
   background:#0E112A;
-  padding: 10px;
+  padding: 5px;
+  
   box-shadow: -32px -39px 30px 1px #222444;
   
 
@@ -143,10 +145,10 @@ body {
 
 
 .timer input {
-  display: block;
+  /* display: block; */
   border: none;
-  width: 3em;
-  font-size: 80px;
+  width: 2.8em;
+  font-size: 70px;
   text-align: center;
 }
 
