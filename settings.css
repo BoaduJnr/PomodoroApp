@@ -1,179 +1,178 @@
 .settings {
-    text-align: center;
-  }
+  text-align: center;
+}
+
+.settings-button{
+  font-size: 1em;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.2s ease-out;
+  border-radius: 50px;
+}
+.overlay{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0; 
+  background: rgba(0,0,0,0.8); 
+  transition: opacity 500ms;
+   visibility: hidden; 
+   opacity: 0; 
+}
+
+.overlay:target{
+visibility: visible;
+opacity: 1;
+}
+ .wrapper {
+  margin : 70px auto;
+  padding: 2em;
+  background: #FFFFFF;
+  width: 60%;
+  position: relative;
+  transition: all 5s ease-in-out;
+  /* width: 540px; */
   
-  .settings-button{
-    font-size: 1em;
-    text-decoration: none;
-    cursor: pointer;
-    transition: all 0.2s ease-out;
-    border-radius: 50px;
-  }
-  .overlay{
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0; 
-    background: rgba(0,0,0,0.8); 
-    transition: opacity 500ms;
-     visibility: hidden; 
-     opacity: 0; 
-  }
-  
-  .overlay:target{
-  visibility: visible;
-  opacity: 1;
-  }
-   .wrapper {
-    margin : 70px auto;
-    padding: 2em;
-    background: #FFFFFF;
-    width: 60%;
-    position: relative;
-    transition: all 5s ease-in-out;
-    /* width: 540px; */
-    
-    border-radius: 25px;
-  
-  }
-  
-  .wrapper .close{
-    position: absolute;
-    top: 5px;
-    right: 30px;
-    transition: all 200ms;
-    font-size: 30px;
-    font-weight: bold;
-    text-decoration: none;
-    color: #333;
-  }
-  .wrapper h2{
-  height: 35px;
-  width: 110px;
-  left: 40px;
-  top: 34px;
-  font-size: 28px;
-  font-weight: 700;
-  line-height: 35px;
-  letter-spacing: 0px;
-  text-align: left;
-  margin-bottom: 1em;
-  
-  }
-  
-  .wrapper p{
-  height: 16px;
-  width: 52px;
+  border-radius: 25px;
+
+}
+
+.wrapper .close{
+  position: absolute;
+  top: 5px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.wrapper h2{
+height: 35px;
+width: 110px;
+left: 40px;
+top: 34px;
+font-size: 28px;
+font-weight: 700;
+line-height: 35px;
+letter-spacing: 0px;
+text-align: left;
+margin-bottom: 1em;
+
+}
+
+.wrapper p{
+height: 16px;
+width: 52px;
+left: 0px;
+top: 21px;
+border-radius: nullpx;
+font-family: Kumbh Sans;
+font-size: 13px;
+font-weight: 600;
+line-height: 16px;
+letter-spacing: 5px;
+text-align: left;
+
+
+}
+.wrapper .content{
+   max-height: 80%;
+   overflow: auto ;
+   /* display: flex;
+   flex-wrap: wrap; */
+} 
+
+.set-timer input[type="number"] {
+  height: 46px;
+  /* width: 8em; */
   left: 0px;
   top: 21px;
-  border-radius: nullpx;
-  font-family: Kumbh Sans;
-  font-size: 13px;
-  font-weight: 600;
-  line-height: 16px;
-  letter-spacing: 5px;
+  border-radius: 6px;
+  border: none;
+  background-color: #EFF1FA;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 17px;
+  letter-spacing: 0px;
   text-align: left;
-  
-  
-  }
-  .wrapper .content{
-     max-height: 80%;
-     overflow: auto ;
-     /* display: flex;
-     flex-wrap: wrap; */
-  } 
-  
-  .set-timer input[type="number"] {
-    height: 46px;
-    width: 8em;
-    left: 0px;
-    top: 21px;
-    border-radius: 6px;
-    border: none;
-    background-color: #EFF1FA;
-    font-family: Kumbh Sans;
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 17px;
-    letter-spacing: 0px;
-    text-align: left;
-    padding: 1em;
-    margin-bottom: 1em;
-  
-  }
-  .set-timer label{
-   
-    top: 1px;
-    font-family: Kumbh Sans;
-    font-size: 12px;
-    font-weight: 700;
-    line-height: 15px;
-    letter-spacing: 0px;
-    text-align: left;
-    color: rgba(30, 33, 63, 0.7);
+  padding: 1em;
+  margin-bottom: 1em;
+
+}
+.set-timer label{
+ 
+  top: 1px;
+  font-family: Kumbh Sans;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 15px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: rgba(30, 33, 63, 0.7);
 
 
+
+
+
+}
+.set-timer{
+  display: flex;
+  /* flex-direction: row; */
+ /* flex-wrap: wrap; */
+  /* height: 109px;
+  width: 462px; */
+  /* left: 40px;
+  top: 118px;
+  border-radius: 0px; */
   
-  
-  
-  }
-  .set-timer{
-    display: flex;
-    /* flex-direction: row; */
-   flex-wrap: wrap;
-    /* height: 109px;
-    width: 462px; */
-    /* left: 40px;
-    top: 118px;
-    border-radius: 0px; */
-    
-  
-  }
-  
-  
-  /* completely hiding radio button */
-  .font input[type="radio"] {
-    display: none;
-  }
-  .font label{
-    background-color: #EFF1FA;
-    border-radius: 50%;
-    margin: 0.5em;
-    width: 15px;
-    height: 15px;
-    cursor: pointer;
-  }
-  
-  .font label:enabled{
-    background-color: #0E112A;
-    color: #EFF1FA;
-  }
-  
-  /* simulate radiobutton appearance using pseudoselector */
-  /* input[type="radio"] + label:before {
-    content: ""; */
-    /* create custom radiobutton appearance */
-    /* display: inline-block;
-    width: 15px;
-    height: 15px;
-    padding: 3px;
-    margin-right: 5px; */
-    /* background-color only for content */
-    /* background-clip: content-box;
-    border: 1px solid #bbbbbb;
-    background-color: #e7e6e7;
-    border-radius: 50%;
-  } */
-  
-  /* appearance of checked radiobutton */
-  /* input[type="radio"]:checked + label:before {
-    background-color: red;
-  } */
-  
-  /* resetting default box-sizing */
-  /* *,
-  *:before,
-  *:after {
-    box-sizing: border-box;
-  } */
+
+}
+
+
+/* completely hiding radio button */
+.font input[type="radio"] {
+  display: none;
+}
+.font label{
+  background-color: #EFF1FA;
+  border-radius: 50%;
+  margin: 0.5em;
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+}
+
+.font label:enabled{
+  background-color: #0E112A;
+  color: #EFF1FA;
+}
+
+/* simulate radiobutton appearance using pseudoselector */
+/* input[type="radio"] + label:before {
+  content: ""; */
+  /* create custom radiobutton appearance */
+  /* display: inline-block;
+  width: 15px;
+  height: 15px;
+  padding: 3px;
+  margin-right: 5px; */
+  /* background-color only for content */
+  /* background-clip: content-box;
+  border: 1px solid #bbbbbb;
+  background-color: #e7e6e7;
+  border-radius: 50%;
+} */
+
+/* appearance of checked radiobutton */
+/* input[type="radio"]:checked + label:before {
+  background-color: red;
+} */
+
+/* resetting default box-sizing */
+/* *,
+*:before,
+*:after {
+  box-sizing: border-box;
+} */
