@@ -29,7 +29,7 @@
     margin : 70px auto;
     padding: 2em;
     background: #FFFFFF;
-    width: 30%;
+    width: 60%;
     position: relative;
     transition: all 5s ease-in-out;
     /* width: 540px; */
@@ -80,8 +80,8 @@
   .wrapper .content{
      max-height: 80%;
      overflow: auto ;
-     display: flex;
-     flex-wrap: wrap;
+     /* display: flex;
+     flex-wrap: wrap; */
   } 
   
   .set-timer input[type="number"] {
