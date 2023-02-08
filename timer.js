@@ -40,6 +40,7 @@ class Timer {
         this.onComplete();
       }
     } else {
+      
       let text = this.timeRemaining.toString();
       let seconds = text.split(".")[1];
       if (seconds > 59) {
