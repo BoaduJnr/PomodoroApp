@@ -1,44 +1,107 @@
+@media screen and (max-width: 480px) {
+  .wrapper {
+    display: flex;
+   flex-wrap: wrap;
+    margin: 10%;
+    padding: 2em 2em 0 2em;
+    background: #FFFFFF;
+    width: 80%;
+    transition: all 5s ease-in-out;
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 4.52%;
+    border-radius: 15px;
+  }
+
+  .set-timer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* width: 462px; */
+    left: 40px;
+    top: 118px;
+    border-radius: 0px;
+  }
+
+}
+
+@media screen and (max-width: 800px) {
+  .wrapper {
+    margin: 70px auto;
+    padding: 2em 2em 0 2em;
+    background: #FFFFFF;
+    width: 30%;
+    position: relative;
+    transition: all 5s ease-in-out;
+    border-radius: 25px;
+
+  }
+
+}
+
+@media screen and (max-width: 1440px) {
+  .wrapper {
+    margin: 70px auto;
+    padding: 2em 2em 2em 2em;
+    background: #FFFFFF;
+    width: 80%;
+    position: relative;
+    transition: all 5s ease-in-out;
+    border-radius: 25px;
+
+  }
+  .set-timer {
+    display: flex;
+    flex-direction: column;
+    /* width: 462px; */
+    left: 40px;
+    top: 118px;
+    border-radius: 0px;
+  }
+
+}
+
 .settings {
   text-align: center;
 }
 
-.settings-button{
+.settings-button {
   font-size: 1em;
   text-decoration: none;
   cursor: pointer;
   transition: all 0.2s ease-out;
   border-radius: 50px;
 }
-.overlay{
+
+.overlay {
   position: fixed;
   top: 0;
   bottom: 0;
   left: 0;
-  right: 0; 
-  background: rgba(0,0,0,0.8); 
+  right: 0;
+  background: rgba(0, 0, 0, 0.8);
   transition: opacity 500ms;
-   visibility: hidden; 
-   opacity: 0; 
+  visibility: hidden;
+  opacity: 0;
 }
 
-.overlay:target{
-visibility: visible;
-opacity: 1;
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
 }
- .wrapper {
-  margin : 70px auto;
-  padding: 2em;
+
+.wrapper {
+  padding: 2em 2em 0 2em;
   background: #FFFFFF;
-  width: 60%;
-  position: relative;
+  /* position: relative; */
   transition: all 5s ease-in-out;
-  /* width: 540px; */
-  
-  border-radius: 25px;
+
 
 }
 
-.wrapper .close{
+.wrapper .close {
   position: absolute;
   top: 5px;
   right: 30px;
@@ -48,44 +111,46 @@ opacity: 1;
   text-decoration: none;
   color: #333;
 }
-.wrapper h2{
-height: 35px;
-width: 110px;
-left: 40px;
-top: 34px;
-font-size: 28px;
-font-weight: 700;
-line-height: 35px;
-letter-spacing: 0px;
-text-align: left;
-margin-bottom: 1em;
+
+.wrapper h2 {
+  height: 35px;
+  width: 110px;
+  left: 40px;
+  top: 34px;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 35px;
+  letter-spacing: 0px;
+  text-align: left;
+  margin-bottom: 1em;
 
 }
 
-.wrapper p{
-height: 16px;
-width: 52px;
-left: 0px;
-top: 21px;
-border-radius: nullpx;
-font-family: Kumbh Sans;
-font-size: 13px;
-font-weight: 600;
-line-height: 16px;
-letter-spacing: 5px;
-text-align: left;
+.wrapper p {
+  height: 16px;
+  width: 52px;
+  left: 0px;
+  top: 21px;
+  border-radius: nullpx;
+  font-family: Kumbh Sans;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: 5px;
+  text-align: left;
 
 
 }
-.wrapper .content{
-   max-height: 80%;
-   overflow: auto ;
-   /* display: flex;
+
+.wrapper .content {
+  max-height: 80%;
+  overflow: auto;
+  /* display: flex;
    flex-wrap: wrap; */
-} 
+}
 
 .set-timer input[type="number"] {
-  height: 46px;
+  /* height: 46px;
   /* width: 8em; */
   left: 0px;
   top: 21px;
@@ -101,8 +166,9 @@ text-align: left;
   margin-bottom: 1em;
 
 }
-.set-timer label{
- 
+
+.set-timer label {
+
   top: 1px;
   font-family: Kumbh Sans;
   font-size: 12px;
@@ -111,31 +177,16 @@ text-align: left;
   letter-spacing: 0px;
   text-align: left;
   color: rgba(30, 33, 63, 0.7);
-
-
-
-
-
 }
-.set-timer{
-  display: flex;
-  /* flex-direction: row; */
- /* flex-wrap: wrap; */
-  /* height: 109px;
-  width: 462px; */
-  /* left: 40px;
-  top: 118px;
-  border-radius: 0px; */
-  
 
-}
 
 
 /* completely hiding radio button */
 .font input[type="radio"] {
   display: none;
 }
-.font label{
+
+.font label {
   background-color: #EFF1FA;
   border-radius: 50%;
   margin: 0.5em;
@@ -144,33 +195,40 @@ text-align: left;
   cursor: pointer;
 }
 
-.font label:enabled{
+.font label:enabled {
   background-color: #0E112A;
   color: #EFF1FA;
 }
 
-.settings button{
-  grid-column: inherit;
-  grid-auto-flow: dense;
+#settings button {
   text-align: center;
-  background-color: #0E112A;
+  background-color: #F87070;
+  color: white;
+  border: none;
   border-radius: 31.5px;
-  padding: 0;
-  margin: 0;
+  padding-bottom: 0;
+  margin-bottom: 0;
   justify-content: center;
+  height: 53px;
+  width: 140px;
+  left: 94px;
+  top: 522px;
+  bottom: 500px;
+
+
 }
 
 /* simulate radiobutton appearance using pseudoselector */
 /* input[type="radio"] + label:before {
   content: ""; */
-  /* create custom radiobutton appearance */
-  /* display: inline-block;
+/* create custom radiobutton appearance */
+/* display: inline-block;
   width: 15px;
   height: 15px;
   padding: 3px;
   margin-right: 5px; */
-  /* background-color only for content */
-  /* background-clip: content-box;
+/* background-color only for content */
+/* background-clip: content-box;
   border: 1px solid #bbbbbb;
   background-color: #e7e6e7;
   border-radius: 50%;

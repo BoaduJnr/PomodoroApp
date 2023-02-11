@@ -5,10 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;900&family=Roboto+Slab&family=Space+Mono:ital@1&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;900&family=Roboto+Slab&family=Space+Mono&display=swap"
       rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="settings.css" />
@@ -19,7 +17,8 @@
     <div class="big-container">
       <div class="small-container">
         <div class="logo-container">
-          <img src="assets/logo.svg" alt="pomodoro logo">
+          <img src="assets/logo.svg" alt="pomodoro logo"
+            style="max-width:100%;height:auto;">
         </div>
         <div class="control-buttons">
           <div>
@@ -32,11 +31,11 @@
           <div class="controls">
             <input id="duration" value="25:00" />
             <div>
-              <button id="start">Restart</button>
-              <button id="pause" style="display: none;">Pause</button>
+              <button id="start">R E S T A R T</button>
+              <button id="pause" style="display: none;">P A U S E</button>
             </div>
           </div>
-          <svg class="dial" >
+          <svg class="dial">
             <circle fill="transparent" stroke="#F87070" stroke-width="15"
               r="180"
               cx="0" cy="200"
@@ -46,14 +45,15 @@
           </div>
           <div class="settings">
             <a href="#divOne"><img class="settings-button"
-                src="assets/icon-settings.svg" alt="settings"></a>
+                src="assets/icon-settings.svg" alt="settings"
+                style="max-width:100%;height:auto;"></a>
           </div>
           <div class="overlay" id="divOne">
             <div class="wrapper">
               <h2>Settings</h2>
               <hr>
-              
-                <a href="#" class="close"> &times;</a>
+
+              <a href="#" class="close"> &times;</a>
               <div class="content">
                 <div class="container">
                   <form id="settings">
@@ -79,45 +79,48 @@
                     </div>
                     <hr>
                     <div class="font" id="font">
-                        <p>Font</p>
+                      <p>Font</p>
 
-                      <input type="radio" name="font" value="Kumbh Sans" id="Kumbh+Sans" ><label
-                        for="Kumbh+Sans" style="font-family: Kumbh Sans;" checked>Aa</label>
-                      <input type="radio" name="font" value="Roboto Slab" id="Roboto+Slab"><label
+                      <input type="radio" name="font" value="Kumbh Sans"
+                        id="Kumbh+Sans"><label
+                        for="Kumbh+Sans" style="font-family: Kumbh Sans;"
+                        checked>Aa</label>
+                      <input type="radio" name="font" value="Roboto Slab"
+                        id="Roboto+Slab"><label
                         for="Roboto+Slab" style="font-family: Roboto Slab;">Aa</label>
-                      <input type="radio" name="font" value="Space Mono" id="Space+Mono" ><label
+                      <input type="radio" name="font" value="Space Mono"
+                        id="Space+Mono"><label
                         for="Space+Mono" style="font-family: Roboto Slab;">Aa</label>
-                      
                     </div>
                     <hr>
                     <div class="color">
                       <p>Color</p>
                       <select id="colorlist">
                         <option value=" #F87070">#F87070
-                      </option>
+                        </option>
                         <option value="#70F3F8">#70F3F8
                         </option>
                         <option value="#D881F8">#D881F8;
                         </option>
                       </select>
                     </div>
-                    <button type="submit">Apply</button> 
+                    <button type="submit">Apply</button>
                   </form>
                 </div>
               </div>
-             
-              
+
+
             </div>
           </div>
         </div>
-    </div>
+      </div>
 
 
-        <script src="timer.js"></script>
-        <script src="helpers.js"></script>
-        <script src="index.js"></script>
-        <script src="settings.js"></script>
-        
-      </body>
+      <script src="timer.js"></script>
+      <script src="helpers.js"></script>
+      <script src="index.js"></script>
+      <script src="settings.js"></script>
 
-    </html>
+    </body>
+
+  </html>

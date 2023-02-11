@@ -29,6 +29,5 @@ settings.addEventListener("submit", (e) => {
   console.log(color)
   pomodoroButton.style.backgroundColor = color
   circle.style.stroke = color
-
-  
+ 
 });

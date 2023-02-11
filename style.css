@@ -8,8 +8,7 @@
 
 body {
   /* height: 100%; */
-  /* width: fit-content; */
-
+  width: fit-content;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -19,6 +18,7 @@ body {
   align-items: stretch;
   align-self: center;
   align-content: center;
+  /* width: 100%; */
 
 
 }
@@ -32,9 +32,14 @@ body {
   justify-content: center;
   background: rgb(19, 21, 46);
   border: none;
+  width: 80%;
+  display: flex;
+  align-content: center;
+  justify-content: center;
 }
 
 @media screen and (max-width: 480px) {
+ */
   .big-container {
     height: auto;
     width: min-content;
@@ -50,6 +55,7 @@ body {
 }
 
 @media screen and (max-width: 1440px) {
+  
   .big-container {
     height: auto;
 
@@ -64,22 +70,24 @@ body {
   height: 40px;
 }
 
-#duration {
-  background: #0E112A;
-  color: rgba(215, 224, 255, 1);
-  font-weight: 600;
+.controls {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 
 }
 
-.controls button {
-  /* display: block; */
-  background: #0E112A;
-  color: rgba(215, 224, 255, 1);
-}
+
 
 .dial {
-  height: 400px;
-  width: 400px;
+  height: 25em;
+  width: 25em;
 }
 
 .small-container {
@@ -101,8 +109,8 @@ body {
   margin: 40px;
 
 
-
 }
+
 
 .control-buttons div {
   grid-column: inherit;
@@ -115,6 +123,23 @@ body {
   justify-content: center;
   /* align-self: stretch; */
 }
+
+.control-buttons button {
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  width: 9rem;
+  height: 4rem;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 17px;
+  letter-spacing: 0px;
+  text-align: center;
+  margin: 5px 0;
+
+
+}
+
 
 #pomodoro {
   border-radius: 20px;
@@ -142,6 +167,7 @@ body {
   /* display: inline-block; */
   margin: 2em;
   border: 8mm solid #161932;
+  /* width: 27%; */
   border-radius: 50% / 50%;
   background: #0E112A;
   padding: 5px;
@@ -155,31 +181,27 @@ body {
 .timer input {
   /* display: block; */
   border: none;
-  width: 2.8em;
-  font-size: 70px;
+  width: 4em;
+  font-size: 450%;
+  line-height: 124.02px;
   text-align: center;
 }
 
-button {
-  border: none;
-  font-size: 20px;
-  cursor: pointer;
-  width: 9rem;
-  height: 4rem;
-  font-size: 1rem;
-  font-weight: 700;
-  line-height: 17px;
-  letter-spacing: 0px;
-  text-align: center;
-  margin: 5px 0;
-
-
+#duration {
+  background: #0E112A;
+  color: rgba(215, 224, 255, 1);
+  font-weight: 540;
 }
+
 
 .timer button {
   border: none;
-  font-size: 36px;
+  font-size: 24px;
   cursor: pointer;
+  background: #0E112A;
+  color: rgba(215, 224, 255, 1);
+  
+  
 }
 
 .timer button:hover {
@@ -191,15 +213,3 @@ button {
   outline: none;
 }
 
-.controls {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-
-}

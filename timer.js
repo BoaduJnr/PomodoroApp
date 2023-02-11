@@ -28,7 +28,7 @@ class Timer {
 
   pause = () => {
     this.pauseButton.style.display = "none";
-    this.startButton.innerText = "Start";
+    this.startButton.innerText = "S T A R T";
     this.startButton.style.display = "block";
     clearInterval(this.interval);
   };
